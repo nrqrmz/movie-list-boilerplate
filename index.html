@@ -28,6 +28,7 @@
 
 
       <template id="movieCardTemplate">
+        {{#movies}}
         <div class='col-3'>
           <div class="card shadow mb-4">
             <img src={{Poster}} class="card-img-top" alt={{Title}}>
@@ -38,8 +39,16 @@
             </div>
           </div>
         </div>
+        {{/movies}}
       </template>
 
+      <template id="fruitsTemplate">
+        <ul>
+          {{#fruits}}
+          <li>{{name}}: {{price}} EUR</li>
+          {{/fruits}}
+        </ul>
+      </template>
 
 
 
